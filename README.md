@@ -217,4 +217,4 @@ DriverVault/
 - Confirme a procedência do driver e do certificado antes de importar ou instalar.
 - Evite substituir drivers em produção sem janela de manutenção e plano de reversão.
 
-Consulte também o [Guia do Usuário](docs/GUIA_USUARIO.md).
+Consulte também o [Guia do Usuário](GUIA_USUARIO.md).
