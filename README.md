@@ -208,33 +208,6 @@ DriverVault/
 - `docs`: documentação complementar.
 - `Backups`, `Logs` e `Relatorios`: dados operacionais locais, não versionados.
 
-## Manutenção futura
-
-- Preserve o carregamento centralizado em `App/DriverVault.ps1`.
-- Ao criar um serviço, registre o arquivo na lista `$requiredScripts` ou em um agregador já carregado.
-- Não processe drivers não selecionados. A seleção do usuário deve continuar sendo uma barreira antes de exportação, validação, certificado, duplicidade detalhada e instalação.
-- Mantenha a listagem de restauração leve, incremental, limitada e cancelável.
-- Prefira caminhos relativos dentro dos backups para manter a portabilidade entre máquinas.
-- Não instale certificados silenciosamente.
-- Não desative a validação de assinatura do Windows.
-- Execute os autotestes após alterar nomes de funções, caminhos, módulos ou serviços.
-- Atualize este README e o guia do usuário quando o comportamento operacional mudar.
-
-## Preparação para GitHub
-
-Os artefatos locais de execução já estão cobertos pelo `.gitignore`. Antes do primeiro envio:
-
-```powershell
-git status
-git add .
-git diff --cached --check
-git commit -m "feat: prepare DriverVault project"
-git remote add origin <URL_DO_REPOSITORIO>
-git push -u origin main
-```
-
-Não adicione manualmente o conteúdo de `Backups`, `Logs` ou `Relatorios`. Revise também se algum backup contém drivers, certificados ou dados cuja distribuição não seja autorizada.
-
 ## Limitações e cuidados
 
 - A exportação depende de o pacote estar publicado no DriverStore.
