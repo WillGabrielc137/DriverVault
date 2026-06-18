@@ -1,0 +1,38 @@
+# Dados operacionais gerados pelo DriverVault
+/Backups/
+/Logs/
+/Relatorios/
+/_codex_validation/
+
+# Artefatos de teste, cobertura e empacotamento
+/TestResults/
+/artifacts/
+/dist/
+/build/
+*.coverage
+*.trx
+
+# Arquivos temporarios e relatórios locais
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+~$*.docx
+
+# Configuracoes locais de IDE/editor
+/.vs/
+/.vscode/
+/.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos do sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Atalhos locais
+*.lnk
